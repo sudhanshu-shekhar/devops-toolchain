@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2009 DTO Solutions <info@dtosolutions.com>
+
+    This work is licensed under the Creative Commons Attribution 3.0 Unported
+    License.  To view a copy of this license, visit
+
+        http://creativecommons.org/licenses/by/3.0/
+
+    or send a letter to:
+
+        Creative Commons
+        171 Second Street, Suite 300
+        San Francisco, California, 94105
+        USA
+
+-->
+
+
+<faqs id="FAQ" title="Frequently Asked Questions">
+  <part id="General">
+    <faq id="question">
+      <question>Why?</question>
+      <answer>
+        <p>
+          42
+        </p>
+      </answer>
+    </faq>
+  </part>
+</faqs>

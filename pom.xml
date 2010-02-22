@@ -1,0 +1,257 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+<!--
+Copyright (C) 2009 DTO Solutions <info@dtosolutions.com>
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+  -->
+
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- POM originated from maven-download-plugin google code project -->
+  <groupId>com.googlecode.devops-toolchain</groupId>
+  <artifactId>devops-toolchain</artifactId>
+  <packaging>jar</packaging>
+  <version>0.1-SNAPSHOT</version>
+  <name>The DevOps Toolchain</name>
+
+  <!-- Build plugins and extensions -->
+  <build>
+    <plugins>
+      <plugin>
+        <!-- we'll get strict on license declaration on files for this project -->
+        <inherited>false</inherited>
+        <groupId>com.mycila.maven-license-plugin</groupId>
+        <artifactId>maven-license-plugin</artifactId>
+        <version>1.5.1</version>
+        <configuration>
+          <header>${basedir}/src/etc/header.txt</header>
+          <failIfMissing>true</failIfMissing>
+          <excludes>
+            <exclude>pom.xml</exclude>
+          </excludes>
+          <properties>
+            <year>${project.inceptionYear}</year>
+            <email>info@dtosolutions.com</email>
+            <companyName>DTO Solutions</companyName>
+          </properties>
+        </configuration>
+        <executions>
+          <execution>
+            <id>check-headers</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <!--
+            During release:perform, enable the "release" profile
+          -->
+          <releaseProfiles>release</releaseProfiles>
+          <goals>deploy site:site site:deploy</goals>
+        </configuration>
+      </plugin>
+    </plugins>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav</artifactId>
+        <version>1.0-beta-2</version>
+      </extension>
+    </extensions>
+  </build>
+
+  <!-- Dependencies -->
+  <dependencies>
+  </dependencies>
+
+  <!-- Reporting -->
+  <reporting>
+    <plugins>
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.1.2</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+          <linkJavadoc>true</linkJavadoc>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <linkXref>true</linkXref>
+          <targetJdk>${jdk}</targetJdk>
+          <minimumTokens>100</minimumTokens>
+          <rulesets>
+            <!-- Rule sets that come bundled with PMD -->
+            <ruleset>/rulesets/basic.xml</ruleset>
+            <ruleset>/rulesets/braces.xml</ruleset>
+            <ruleset>/rulesets/finalizers.xml</ruleset>
+            <ruleset>/rulesets/imports.xml</ruleset>
+            <ruleset>/rulesets/migrating.xml</ruleset>
+            <ruleset>/rulesets/strings.xml</ruleset>
+            <ruleset>/rulesets/unusedcode.xml</ruleset>
+          </rulesets>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>taglist-maven-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <tags>
+            <tag>TODO</tag>
+            <tag>FIXME</tag>
+            <tag>@todo</tag>
+            <tag>@fixme</tag>
+            <tag>@deprecated</tag>
+          </tags>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-changes-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <issueLinkTemplate>%URL%/detail?id=%ISSUE%&amp;can=1</issueLinkTemplate>
+        </configuration>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>changes-report</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+      <plugin>
+        <artifactId>maven-changelog-plugin</artifactId>
+        <version>2.1</version>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>cobertura-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </reporting>
+  
+  <!-- Distribution Management -->
+  
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>devops-toolchain</id>
+      <name>Maven download plugin release repository</name>
+      <url>dav:https://devops-toolchain.googlecode.com/svn/release-repository/</url>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>devops-toolchain</id>
+      <name>Maven download plugin snapshot repository</name>
+      <url>dav:https://devops-toolchain.googlecode.com/svn/snapshot-repository/</url>
+    </snapshotRepository>
+    <site>
+      <id>devops-toolchain</id>
+      <url>dav:https://devops-toolchain.googlecode.com/svn/site</url>
+    </site>
+  </distributionManagement>
+  
+  <!-- Miscellaneous build properties (SCM, license, issues, etc) -->
+  
+  <description>
+    The devops-toolchain is a living document focused on the open source 
+    tools which are used to create an automated and agile datacenter.
+    The document is developed like an open source project and continuously
+    versioned in an attempt to keep up with the latest tools and techniques
+    used.
+  </description>
+  <url>http://devops-toolchain.googlecode.com</url>
+  <developers>
+    <developer>
+      <id>stagr.lee</id>
+      <name>Lee Thompson</name>
+      <timezone>-6</timezone>
+      <roles>
+        <role>developer</role>
+        <role>lead</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>ahonor@users.sourceforge.net</id>
+      <name>Alex Honor</name>
+      <timezone>-4</timezone>
+      <roles>
+        <role>developer</role>
+        <role>lead</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>damonedwards</id>
+      <name>Damon Edwards</name>
+      <timezone>-4</timezone>
+      <roles>
+        <role>developer</role>
+        <role>lead</role>
+      </roles>
+    </developer>
+  </developers>
+  <inceptionYear>2009</inceptionYear>
+  
+  <issueManagement>
+    <system>Google code</system>
+    <url>http://code.google.com/p/devops-toolchain/issues/list</url>
+  </issueManagement>
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+    <license>
+      <name>Creative Commons 3.0 BY</name>
+      <url>http://creativecommons.org/licenses/by/3.0/</url>
+      <distribution>repo</distribution>
+      <comments>
+        Attribution to DTO Solutions, the IT Operations Consultants
+        who started the devops-toolchain project and all community
+        contributors for fixing the DTO mistakes.
+      </comments>
+    </license>
+  </licenses>
+  <scm>
+    <connection>
+      scm:svn:http://devops-toolchain.googlecode.com/svn/trunk/devops-toolchain/
+    </connection>
+    <developerConnection>
+      scm:svn:https://devops-toolchain.googlecode.com/svn/trunk/devops-toolchain/
+    </developerConnection>
+    <url> http://code.google.com/p/devops-toolchain/source/browse/#svn/trunk/devops-toolchain 
+    </url>
+  </scm>
+  <prerequisites>
+    <maven>2.0</maven>
+  </prerequisites>
+  <organization>
+    <name>Independant</name>
+    <url>http://devops-toolchain.googlecode.com</url>
+  </organization>
+  
+</project>
