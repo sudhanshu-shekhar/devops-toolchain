@@ -16,15 +16,27 @@
         USA
 
 -->
-
-
 <faqs id="FAQ" title="Frequently Asked Questions">
   <part id="General">
-    <faq id="question">
-      <question>Why?</question>
+    <faq id="bugs">
+      <question>How do I fix problems with this document?</question>
       <answer>
         <p>
-          42
+          We run this document like a software project and you log bugs.  The bug
+          report starts a dialog on how to best address the issue and incorporate 
+          the fix back into the next version.
+        </p>
+      </answer>
+    </faq>
+    <faq id="wiki">
+      <question>Why not use a wiki?</question>
+      <answer>
+        <p>
+          The change process of a wiki does not generate as much dialog as a
+          standard software change lifecycle which introduces an issue or feature 
+          request, an implementation plan, and the development of the "fix".
+          We decided to use a SDLC for this document instead of wiki for that
+          reason.
         </p>
       </answer>
     </faq>

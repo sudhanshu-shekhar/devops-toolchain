@@ -18,8 +18,6 @@ limitations under the License.
 
 
   <modelVersion>4.0.0</modelVersion>
-
-  <!-- POM originated from maven-download-plugin google code project -->
   <groupId>com.googlecode.devops-toolchain</groupId>
   <artifactId>devops-toolchain</artifactId>
   <packaging>jar</packaging>
@@ -54,6 +52,32 @@ limitations under the License.
             <goals>
               <goal>check</goal>
             </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <!-- http://docbkx-tools.sourceforge.net/docbkx-samples/manual.html -->
+        <groupId>com.agilejava.docbkx</groupId>
+        <artifactId>docbkx-maven-plugin</artifactId>
+        <version>2.0.9</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.docbook</groupId>
+            <artifactId>docbook-xml</artifactId>
+            <version>4.4</version>
+            <scope>runtime</scope>
+          </dependency>
+        </dependencies>
+        <configuration>
+          <chunkedOutput>true</chunkedOutput>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>generate-html</goal>
+              <goal>generate-pdf</goal>
+            </goals>
+            <phase>pre-site</phase>
           </execution>
         </executions>
       </plugin>
