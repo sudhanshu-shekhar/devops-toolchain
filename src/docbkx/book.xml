@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+    Copyright (C) 2009 DTO Solutions <info@dtosolutions.com>
+
+    This work is licensed under the Creative Commons Attribution 3.0 Unported
+    License.  To view a copy of this license, visit
+
+        http://creativecommons.org/licenses/by/3.0/
+
+    or send a letter to:
+
+        Creative Commons
+        171 Second Street, Suite 300
+        San Francisco, California, 94105
+        USA
+
+-->
+
+<book version="5.0" xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:ns="http://docbook.org/ns/docbook"
+      xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml">
+  <info>
+    <title>DevOps Toolchain</title>
+
+    <author>
+      <personname>Damon Edwards</personname>
+      <affiliation>
+        <orgname>DTO Solutions</orgname>
+      </affiliation>
+      <email>damon@dtosolutions.com</email>
+    </author>
+
+    <author>
+      <personname>Alex Honor</personname>
+      <affiliation>
+        <orgname>DTO Solutions</orgname>
+      </affiliation>
+      <email>alex@dtosolutions.com</email>
+    </author>
+
+    <author>
+      <personname>Lee Thompson</personname>
+      <affiliation>
+        <orgname>DTO Solutions</orgname>
+      </affiliation>
+      <email>thompson@dtosolutions.com</email>
+    </author>
+
+  </info>
+
+  <!--acknowledgements>
+    <para>
+      This is a community supported document and we would like to
+      thank the following people.
+    </para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Jacob Rosenberg jacobrosenberg at gmail who...</para>
+      </listitem>
+    </itemizedlist>
+  </acknowledgements-->
+
+
+  <chapter>
+    <title>This is a chapter</title>
+
+    <section>
+      <title>This is a section</title>
+
+      <para>This is a paragraph.</para>
+    </section>
+
+    <!--xi:include href="included_section.xml" /-->
+  </chapter>
+</book>
+
