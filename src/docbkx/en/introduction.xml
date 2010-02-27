@@ -1,0 +1,9 @@
+<chapter id="introduction">
+  <title>Introduction</title>
+
+  <sect1 id="About-this-Book">
+    <title>About this Book</title>
+
+    <para>This is a paragraph.</para>
+  </sect1>
+</chapter>

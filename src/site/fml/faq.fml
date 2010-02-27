@@ -40,5 +40,28 @@
         </p>
       </answer>
     </faq>
+    <faq id="copyright">
+      <question>Why is the copyright held by DTO Solutions?</question>
+      <answer>
+        <p>
+          Good question.  This document was first written as a PDF file by
+          DTO Solutions staffers and hosted on the dev2ops blog.  It was 
+          quickly determined that the shelf life of the information 
+          presented was going to be 6 months to a year at best and the 
+          scope was only application provisioning which was too narrow.  
+          To increase scope and address news worthyness of the information,
+          putting a community process around the info was employed.
+        </p>
+        <p>
+          The idea was publically discussed at OpsCamp in Austin, TX in 
+          January and the feedback was generally very positive.  One piece 
+          of feedback was someone or some organization has to be a central 
+          coordinator for the updates and releases instead of a wide open
+          process (like a wiki).  For this reason, DTO has the copyright, but
+          the license is very liberal which is Creative Commons with 
+          Attribution.
+        </p>
+      </answer>
+    </faq>
   </part>
 </faqs>

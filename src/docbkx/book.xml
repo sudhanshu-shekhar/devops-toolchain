@@ -18,66 +18,20 @@
 
 -->
 
-<book version="5.0" xmlns="http://docbook.org/ns/docbook"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      xmlns:xi="http://www.w3.org/2001/XInclude"
-      xmlns:svg="http://www.w3.org/2000/svg"
-      xmlns:ns="http://docbook.org/ns/docbook"
-      xmlns:mathml="http://www.w3.org/1998/Math/MathML"
-      xmlns:html="http://www.w3.org/1999/xhtml">
-  <info>
-    <title>DevOps Toolchain</title>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
+  "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" [
 
-    <author>
-      <personname>Damon Edwards</personname>
-      <affiliation>
-        <orgname>DTO Solutions</orgname>
-      </affiliation>
-      <email>damon@dtosolutions.com</email>
-    </author>
+  <!ENTITY bookinfo SYSTEM "en/bookinfo.xml">
+  <!ENTITY introduction SYSTEM "en/introduction.xml">
+  <!ENTITY license SYSTEM "en/license.xml">
 
-    <author>
-      <personname>Alex Honor</personname>
-      <affiliation>
-        <orgname>DTO Solutions</orgname>
-      </affiliation>
-      <email>alex@dtosolutions.com</email>
-    </author>
+]>
 
-    <author>
-      <personname>Lee Thompson</personname>
-      <affiliation>
-        <orgname>DTO Solutions</orgname>
-      </affiliation>
-      <email>thompson@dtosolutions.com</email>
-    </author>
+<book id="devops-toolchain" lang="en">
 
-  </info>
+&bookinfo;
+&introduction;
+&license;
 
-  <!--acknowledgements>
-    <para>
-      This is a community supported document and we would like to
-      thank the following people.
-    </para>
-
-    <itemizedlist>
-      <listitem>
-        <para>Jacob Rosenberg jacobrosenberg at gmail who...</para>
-      </listitem>
-    </itemizedlist>
-  </acknowledgements-->
-
-
-  <chapter>
-    <title>This is a chapter</title>
-
-    <section>
-      <title>This is a section</title>
-
-      <para>This is a paragraph.</para>
-    </section>
-
-    <!--xi:include href="included_section.xml" /-->
-  </chapter>
 </book>
 

@@ -22,14 +22,15 @@ limitations under the License.
   <artifactId>devops-toolchain</artifactId>
   <packaging>jar</packaging>
   <version>0.1-SNAPSHOT</version>
-  <name>The DevOps Toolchain</name>
+  <name>DevOps Toolchain</name>
 
   <!-- Build plugins and extensions -->
   <build>
     <plugins>
       <plugin>
         <!-- we'll get strict on license declaration on files for this project
-             If you get an error thrown from this plugin, you can run this
+             If you get an error thrown from this plugin, you probably added a
+             new file that doesn't have a license declared.  You can run this
              plugin on the command line to insert/fix the header...
 
              $ mvn license:format
@@ -79,7 +80,7 @@ limitations under the License.
         <configuration>
           <chunkedOutput>true</chunkedOutput>
           <fop1Extensions>1</fop1Extensions>
-          <foCustomization>src/docbkx-stylesheet/fo/docbook.xsl</foCustomization>
+          <!--foCustomization>src/docbkx-stylesheet/fo/docbook.xsl</foCustomization-->
           <!--paperType>letter</paperType-->
         </configuration>
         <executions>
@@ -212,13 +213,7 @@ limitations under the License.
   
   <!-- Miscellaneous build properties (SCM, license, issues, etc) -->
   
-  <description>
-    The devops-toolchain is a living document focused on the open source 
-    tools which are used to create an automated and agile datacenter.
-    The document is developed like an open source project and continuously
-    versioned in an attempt to keep up with the latest tools and techniques
-    used.
-  </description>
+  <description>Open Source tools for the Automated Enterprise</description>
   <url>http://devops-toolchain.googlecode.com</url>
   <developers>
     <developer>
@@ -286,7 +281,7 @@ limitations under the License.
     <maven>2.0</maven>
   </prerequisites>
   <organization>
-    <name>Independant</name>
+    <name>DTO Solutions</name>
     <url>http://devops-toolchain.googlecode.com</url>
   </organization>
   

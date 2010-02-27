@@ -21,6 +21,7 @@
     Important links:
     - http://www.sagehill.net/docbookxsl/
     - http://docbkx-tools.sourceforge.net/
+    - http://docbook.sourceforge.net/release/xsl/current/doc/
   -->
   <!--xsl:param name="alignment">justify</xsl:param-->
   <xsl:param name="hyphenate">false</xsl:param>
