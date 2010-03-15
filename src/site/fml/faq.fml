@@ -59,20 +59,20 @@
           coordinator for the updates and releases instead of a wide open
           process (like a wiki).  For this reason, DTO has the copyright, but
           the license is very liberal which is Creative Commons with 
-          Attribution.
+          Attribution Share Alike.
         </p>
       </answer>
     </faq>
     <faq id="altcopyright">
       <question>I want to contribute, but with my own copyright.  How
         can I do that?
-      <question>
+      </question>
       <answer>
         <p>
           The book is written in docbook format and the book, chapters, sections,
           etc can all have individual copyrights.  See the book introduction
           for information on how this is done.  Contributions must be creative
-          commons attribution 3.0 unported license however.
+          commons attribution 3.0 share alike license however.
         </p>
       </answer>
     </faq>
