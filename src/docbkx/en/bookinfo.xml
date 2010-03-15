@@ -1,3 +1,5 @@
+<!-- vim: set filetype=docbkxml shiftwidth=2 autoindent expandtab tw=77 : -->
+
 <!--
 
     Copyright (C) 2009 DTO Solutions <info@dtosolutions.com>
@@ -19,15 +21,15 @@
 <bookinfo>
   <title><?eval ${project.name}?></title>
   <subtitle><?eval ${project.description}?></subtitle>
+  <releaseinfo><?eval ${project.version}?></releaseinfo>
 
   <authorgroup>
     <author>
       <firstname>Damon</firstname>
       <surname>Edwards</surname>
       <affiliation>
-        <orgname>DTO Solutions</orgname>
         <address>
-          <email>damon@dtosolutions.com</email>
+          <email>damonedwards@gmail.com</email>
         </address>
       </affiliation>
     </author>
@@ -36,9 +38,8 @@
       <firstname>Alex</firstname>
       <surname>Honor</surname>
       <affiliation>
-        <orgname>DTO Solutions</orgname>
         <address>
-          <email>alex@dtosolutions.com</email>
+          <email>ahonor@users.sourceforge.net</email>
         </address>
       </affiliation>
     </author>
@@ -47,9 +48,8 @@
       <firstname>Anthony</firstname>
       <surname>Shortland</surname>
       <affiliation>
-        <orgname>DTO Solutions</orgname>
         <address>
-          <email>anthony@dtosolutions.com</email>
+          <email>anthony@controltier.com</email>
         </address>
       </affiliation>
     </author>
@@ -58,38 +58,32 @@
       <firstname>Lee</firstname>
       <surname>Thompson</surname>
       <affiliation>
-        <orgname>DTO Solutions</orgname>
         <address>
-          <email>thompson@dtosolutions.com</email>
+          <email>stagr.lee@gmail.com</email>
         </address>
       </affiliation>
     </author>
   </authorgroup>
-
-
-  <!--acknowledgements>
-    <para>
-      This is a community supported document and we would like to
-      thank the following people.
-    </para>
-
-    <itemizedlist>
-      <listitem>
-        <para>Jacob Rosenberg jacobrosenberg at gmail who...</para>
-      </listitem>
-    </itemizedlist>
-  </acknowledgements-->
 
   <copyright>
     <year><?eval ${project.inceptionYear}?></year>
     <holder>DTO Solutions</holder>
   </copyright>
 
+  <legalnotice>
+    <para>
+      This work is licensed under the Creative Commons Attribution 3.0
+      Unported License.  To view a copy of this license, visit
+      <ulink url="http://creativecommons.org/licenses/by/3.0/"/>
+    </para>
+  </legalnotice>
+
   <keywordset>
     <keyword>toolchain</keyword>
     <keyword>devops</keyword>
     <keyword>dev2ops</keyword>
     <keyword>automation</keyword>
+    <keyword>datacenter</keyword>
     <keyword>agile</keyword>
   </keywordset>
 </bookinfo>

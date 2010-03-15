@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!-- vim: set filetype=docbkxml shiftwidth=2 autoindent expandtab tw=77 : -->
+
 <!--
 
     Copyright (C) 2009 DTO Solutions <info@dtosolutions.com>
@@ -18,8 +20,8 @@
 
 -->
 
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
-  "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" [
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
 
   <!ENTITY bookinfo SYSTEM "en/bookinfo.xml">
   <!ENTITY introduction SYSTEM "en/introduction.xml">

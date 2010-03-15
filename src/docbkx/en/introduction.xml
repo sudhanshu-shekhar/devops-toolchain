@@ -1,9 +1,165 @@
+<!-- vim: set filetype=docbkxml shiftwidth=2 autoindent expandtab tw=77 : -->
+
 <chapter id="introduction">
+  <chapterinfo>
+    <author>
+      <firstname>Lee</firstname>
+      <surname>Thompson</surname>
+      <email>stagr.lee@gmail.com</email>
+    </author>
+    <!--copyright>
+      <year><?eval ${project.inceptionYear}?></year>
+      <holder>DTO Solutions</holder>
+    </copyright-->
+  </chapterinfo>
+
   <title>Introduction</title>
 
   <sect1 id="About-this-Book">
     <title>About this Book</title>
-
-    <para>This is a paragraph.</para>
+    <para>This book is dedicated to the numerous open source tools which have
+      have been created to solve the task of increasing the the syndication 
+      rate and quality of applications in mission critical production
+      scenarios.  The focus is on the open source tools as these solutions have
+      not had huge marketing dollars behind them like their larger, better funded
+      commercial variants.  The goal is to get more information into the hands of
+      IT decision makers on approaches and techniques used to solve the "devops"
+      problem.  Some organizations will go pure commercial, internal propietary, or
+      open source.  Most will use a hybrid of solutions from all three sources
+      based on the needs of their business.
+    </para>
   </sect1>
-</chapter>
+
+  <sect1 id="This-Book-is-Obsolete">
+    <title>This Book is Obsolete</title>
+    <para>The scope of IT is continuing at a frenzied pace.  With the onset of 
+      rapid application development tools and cloud deployment of those apps,
+      the complexity is about to take another jump upward.  Let the inovation begin!
+      The tools and techniques to manage the greater complexity are going to 
+      change just as rapidly as the scope of IT.  So with that reality, this
+      document is going to be continually out of date.
+    </para>
+    <para>
+      The only feasible way to keep up is to solicit community involvment.
+      The easiest way to get involved in fixing a problem with the document is
+      to <ulink url="http://code.google.com/p/devops-toolchain/issues/list">
+      log a bug</ulink> just like any software project.  The
+      committers of the project will review the post and work with you to get
+      the issue resolved.  Another way to participate is to write a chapter
+      or submit a rewrite of a section as a patch.
+    </para>
+  </sect1>
+  <sect1 id="History">
+    <title>History</title>
+    <para>
+      The origins of this project came from the <ulink url="http://dev2ops.org/toolchain/">
+      "Provisioning Toolchain Whitepaper"</ulink> from October, 2009.  Many comments 
+      wanted the whitepaper to cover other areas of the datacenter like
+      artifact repositories, CMDB, monitoring, etc.  The toolchain approach to
+      the provisioning problem was well received, but the scope of the entire data
+      was too large for a small team of authors.
+    </para>
+    <para>
+      At <ulink url="http://www.opscamp.org/">OpsCamp</ulink> in Austin, Texas in
+      January, 2010, the idea of an open source project was discussed.  Several participants
+      at OpsCamp stated their support for the idea and would be willing to 
+      review or contribute to the project.  One concept that was discussed was
+      licensing and copyright.  The general concensus was "someone needs to own this".
+      For this reason, after OpsCamp, we decided DTO Solutions would have the 
+      copyright but use a very liberal Creative Commons license (see next section).
+    </para>
+    <para>
+      Following OpsCamp, the devops-toolchain google code project was opened up
+      and applications to speak at the Spring O'Reilly Velocity teleconference as
+      well as the Summer O'Reilly Velocity annual conference in San Jose.  Both
+      talks were accepted.  The project was announced at The Spring Velocity 
+      teleconference with a beta release to follow in summer.
+    </para>
+  </sect1>
+  <sect1 id="License">
+    <title>License and Copyright</title>
+    <para>
+      DTO Solutions is sponsoring the project and acting as editor for the
+      devops-toolchain googlecode project at <ulink
+      url="http://code.google.com/p/devops-toolchain/">googlecode</ulink>.  Since the format
+      of the work is docbook, individual contributions can be attributed in 
+      the syntax of the docbook encoding.  For instance, this introduction chapter 
+      was written by Lee Thompson and the docbook XML file has the following annotation
+      encoded into it.
+    </para>
+    <programlisting>
+<![CDATA[
+  <chapterinfo>
+    <author>
+      <firstname>Lee</firstname>
+      <surname>Thompson</surname>
+      <email>stagr.lee@gmail.com</email>
+    </author>
+  </chapterinfo>
+]]>
+    </programlisting>
+    <para>
+      Since Lee assigned the copyright over to the editors of the book, no 
+      copyright notice was put into the annotation.  The default behavior of
+      contributions to this document are to assign copyright over to DTO Solutions.
+      Contributions will be accepted without copyright assignment.  For example,
+      Suppose Lee had issue with the copyright and Lee's content was accepted,
+      the annotation would look something like this.
+    </para>
+    <programlisting>
+<![CDATA[
+  <chapterinfo>
+    <author>
+      <firstname>Lee</firstname>
+      <surname>Thompson</surname>
+      <email>stagr.lee@gmail.com</email>
+    </author>
+    <copyright>
+      <year>2010</year>
+      <holder>Lee Thompson</holder>
+    </copyright>
+  </chapterinfo>
+]]>
+    </programlisting>
+    <para>
+      Even with copyright being maintained, the work will be edited in time by the 
+      community maintaining the document as the creative commons license allows.  
+    </para>
+    <para>
+       A copyright can be encoded to a very fine level with docbook all the way down
+       to a quote being attributed.  For example, if Rick Beale's
+       quote were to be used in the book
+    </para>
+    <blockquote>
+      <attribution>
+        <author>
+          <firstname>Rick</firstname>
+          <surname>Beale</surname>
+        </author>
+        <email>ricky78732@yahoo.com</email>
+      </attribution>
+      <literallayout>
+        Thinking ahead is NO EXCUSE for thinking!
+      </literallayout>
+    </blockquote>
+    <para>
+       It would be encoded as such
+    </para>
+    <programlisting>
+<![CDATA[
+    <blockquote>
+      <attribution>
+        <author>
+          <firstname>Rick</firstname>
+          <surname>Beale</surname>
+        </author>
+        <email>ricky78732@yahoo.com</email>
+      </attribution>
+      <literallayout>
+        Thinking ahead is NO EXCUSE for thinking!
+      </literallayout>
+    </blockquote>
+]]>
+    </programlisting>
+  </sect1>
+ </chapter>

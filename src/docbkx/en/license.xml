@@ -1,3 +1,4 @@
+<!-- vim: set filetype=docbkxml shiftwidth=2 autoindent expandtab tw=77 : -->
 <appendix id="license">
   <title>License</title>
 
@@ -5,37 +6,30 @@
     <title>Creative Commons Attribution 3.0 Unported</title>
 
     <para>
-      Copyright (C) <?eval ${project.inceptionYear}?> <?eval ${project.organization.name}?> &lt;info@dtosolutions.com&gt;
-      <variablelist>
-
-        <varlistentry>
-          <term>
-            This work is licensed under the Creative Commons Attribution 3.0 
-            Unported License.  To view a copy of this license, visit
-          </term>
-          <listitem>
-            <para>
-              <ulink url="http://creativecommons.org/licenses/by/3.0/"/>
-            </para>
-          </listitem>
-        </varlistentry>
-
-        <varlistentry>
-          <term>or send a letter to:</term>
-
-          <listitem>
-            <para>
-              <simplelist>
-                <member>Creative Commons</member>
-                <member>171 Second Street, Suite 300</member>
-                <member>San Francisco, California, 94105</member>
-                <member>USA</member>
-              </simplelist>
-            </para>
-          </listitem>
-        </varlistentry>
-      </variablelist>
+      Copyright (C) <?eval ${project.inceptionYear}?>
+      <?eval ${project.organization.name}?> &lt;info@dtosolutions.com&gt;
     </para>
 
+    <para>
+      This work is licensed under the Creative Commons Attribution 3.0 
+      Unported License.  To view a copy of this license, visit
+    </para>
+
+    <para>&nbsp;&nbsp;&nbsp;&nbsp;
+      <ulink url="http://creativecommons.org/licenses/by/3.0/"/>
+    </para>
+
+    <para>
+      or send a letter to:
+    </para>
+
+    <para>
+      <simplelist>
+        <member>&nbsp;&nbsp;&nbsp;&nbsp;Creative Commons</member>
+        <member>&nbsp;&nbsp;&nbsp;&nbsp;171 Second Street, Suite 300</member>
+        <member>&nbsp;&nbsp;&nbsp;&nbsp;San Francisco, California, 94105</member>
+        <member>&nbsp;&nbsp;&nbsp;&nbsp;USA</member>
+      </simplelist>
+    </para>
   </sect1>
 </appendix>

@@ -63,5 +63,18 @@
         </p>
       </answer>
     </faq>
+    <faq id="altcopyright">
+      <question>I want to contribute, but with my own copyright.  How
+        can I do that?
+      <question>
+      <answer>
+        <p>
+          The book is written in docbook format and the book, chapters, sections,
+          etc can all have individual copyrights.  See the book introduction
+          for information on how this is done.  Contributions must be creative
+          commons attribution 3.0 unported license however.
+        </p>
+      </answer>
+    </faq>
   </part>
 </faqs>
