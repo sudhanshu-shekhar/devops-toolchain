@@ -35,6 +35,36 @@ limitations under the License.
 
   <!-- Build plugins and extensions -->
   <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.0-beta-9</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.5</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>2.0.1</version>
+        </plugin>
+        <plugin>
+          <groupId>com.mycila.maven-license-plugin</groupId>
+          <artifactId>maven-license-plugin</artifactId>
+          <version>1.5.1</version>
+        </plugin>
+        <plugin>
+          <groupId>com.agilejava.docbkx</groupId>
+          <artifactId>docbkx-maven-plugin</artifactId>
+          <version>2.0.9</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
     <plugins>
       <plugin>
         <!-- we'll get strict on license declaration on files for this project
@@ -47,12 +77,12 @@ limitations under the License.
         <inherited>false</inherited>
         <groupId>com.mycila.maven-license-plugin</groupId>
         <artifactId>maven-license-plugin</artifactId>
-        <version>1.5.1</version>
         <configuration>
           <header>${basedir}/src/etc/header.txt</header>
           <failIfMissing>true</failIfMissing>
           <includes>
             <include>**/*.xslt</include>
+            <include>**/*.xml</include>
           </includes>
           <excludes>
             <exclude>pom.xml</exclude>
@@ -66,7 +96,7 @@ limitations under the License.
         <executions>
           <execution>
             <id>check-headers</id>
-            <phase>verify</phase>
+            <phase>generate-sources</phase>
             <goals>
               <goal>check</goal>
             </goals>
@@ -77,7 +107,6 @@ limitations under the License.
         <!-- http://docbkx-tools.sourceforge.net/docbkx-samples/manual.html -->
         <groupId>com.agilejava.docbkx</groupId>
         <artifactId>docbkx-maven-plugin</artifactId>
-        <version>2.0.9</version>
         <dependencies>
           <dependency>
             <groupId>docbook</groupId>
@@ -136,8 +165,8 @@ limitations under the License.
     <extensions>
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
-        <artifactId>wagon-webdav</artifactId>
-        <version>1.0-beta-2</version>
+        <artifactId>wagon-webdav-jackrabbit</artifactId>
+        <version>1.0-beta-6</version>
       </extension>
     </extensions>
   </build>
@@ -224,18 +253,18 @@ limitations under the License.
   <distributionManagement>
     <repository>
       <uniqueVersion>false</uniqueVersion>
-      <id>devops-toolchain</id>
+      <id>devops-toolchain-googlecode</id>
       <name>Maven download plugin release repository</name>
       <url>dav:https://devops-toolchain.googlecode.com/svn/release-repository/</url>
     </repository>
     <snapshotRepository>
       <uniqueVersion>false</uniqueVersion>
-      <id>devops-toolchain</id>
+      <id>devops-toolchain-googlecode</id>
       <name>Maven download plugin snapshot repository</name>
       <url>dav:https://devops-toolchain.googlecode.com/svn/snapshot-repository/</url>
     </snapshotRepository>
     <site>
-      <id>devops-toolchain</id>
+      <id>devops-toolchain-googlecode</id>
       <url>dav:https://devops-toolchain.googlecode.com/svn/site</url>
     </site>
   </distributionManagement>
