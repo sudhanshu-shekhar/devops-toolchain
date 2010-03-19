@@ -58,7 +58,7 @@ limitations under the License.
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
-          <version>2.1</version>
+          <version>2.0.1</version>
         </plugin>
         <plugin>
           <groupId>com.mycila.maven-license-plugin</groupId>
@@ -178,16 +178,16 @@ limitations under the License.
       </plugin>
     </plugins>
     <extensions>
-      <!--extension>
+      <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-webdav-jackrabbit</artifactId>
         <version>1.0-beta-6</version>
-      </extension-->
-      <extension>
+      </extension>
+      <!--extension>
         <groupId>org.jvnet.wagon-svn</groupId>
         <artifactId>wagon-svn</artifactId>
         <version>1.9</version>
-      </extension>
+      </extension-->
 
     </extensions>
   </build>
@@ -286,7 +286,7 @@ limitations under the License.
     </snapshotRepository>
     <site>
       <id>devops-toolchain</id>
-      <url>svn:https://devops-toolchain.googlecode.com/svn/site</url>
+      <url>dav:https://devops-toolchain.googlecode.com/svn/site</url>
     </site>
   </distributionManagement>
   
