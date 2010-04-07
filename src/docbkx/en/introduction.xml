@@ -51,31 +51,40 @@
   <sect1 id="This-Book-is-Obsolete">
     <title>This Book is Obsolete</title>
     <para>The scope of IT is continuing at a frenzied pace.  With the onset of 
-      rapid application development tools and cloud deployment of those apps,
-      the complexity is about to take another jump upward.  Let the inovation begin!
-      The tools and techniques to manage the greater complexity are going to 
-      change just as rapidly as the scope of IT.  So with that reality, this
-      document is going to be continually out of date.
+      agile develop techniques, rapid application development tools, and cloud 
+      deployment of those apps, the complexity is about to take another jump 
+      upward.  Let the inovation begin!  The tools and techniques to manage 
+      the greater complexity are going to change just as rapidly as the scope 
+      of IT.  So with that reality, this document is going to be continually 
+      out of date.
     </para>
     <para>
       The only feasible way to keep up is to solicit community involvment.
       The easiest way to get involved in fixing a problem with the document is
       to <ulink url="http://code.google.com/p/devops-toolchain/issues/list">
-      log a bug</ulink> just like any software project.  The
-      committers of the project will review the post and work with you to get
-      the issue resolved.  Another way to participate is to write a chapter
-      or submit a rewrite of a section as a patch.
+      log a bug</ulink> just like any software project.  Another option is
+      to participate in the devops-toolchain discussion group also hosted on 
+      google which is an excellent place to research discussions of peers 
+      working on devops soluitons, ask questions, and share experience and 
+      best practices.  Discussions tend to form wiki pages and after editing 
+      merge into this compilation book.  The book is written in docbook 
+      format (XML) and hosted on google code in subversion.  If you familiar 
+      with development tools, another way to participate is to write a chapter 
+      or submit a patch to an existing chapter in the book.  If you are 
+      comfortable with WIKI authoring, use the wiki on google code and the 
+      committers to devops-toolchain will merge the work into the book.
     </para>
   </sect1>
   <sect1 id="History">
     <title>History</title>
     <para>
       The origins of this project came from the <ulink url="http://dev2ops.org/toolchain/">
-      "Provisioning Toolchain Whitepaper"</ulink> from October, 2009.  Many comments 
+      "Provisioning Toolchain Whitepaper"</ulink> from July, 2009.  Many comments 
       wanted the whitepaper to cover other areas of the datacenter like
-      artifact repositories, CMDB, monitoring, etc.  The toolchain approach to
-      the provisioning problem was well received, but the scope of the entire data
-      was too large for a small team of authors.
+      artifact repositories, CMDB, monitoring, incident reponse, packaging, 
+      access control, etc.  The toolchain approach to the provisioning problem 
+      was well received, but the scope of the entire data center was too large 
+      for a small team of authors.
     </para>
     <para>
       At <ulink url="http://www.opscamp.org/">OpsCamp</ulink> in Austin, Texas in
@@ -91,16 +100,17 @@
       and applications to speak at the Spring O'Reilly Velocity teleconference as
       well as the Summer O'Reilly Velocity annual conference in San Jose.  Both
       talks were accepted.  The project was announced at The Spring Velocity 
-      teleconference with a beta release to follow in summer.
+      teleconference with a alpha release to follow in summer at Velocity in 
+      San Jose, summer 2010.
     </para>
   </sect1>
   <sect1 id="License">
     <title>License and Copyright</title>
     <para>
-      DTO Solutions is sponsoring the project and acting as editor for the
-      devops-toolchain googlecode project at <ulink
-      url="http://code.google.com/p/devops-toolchain/">googlecode</ulink>.  Since the format
-      of the work is docbook, individual contributions can be attributed in 
+      DTO Solutions is sponsoring and acting as editor for the devops-toolchain 
+      googlecode project at 
+      <ulink url="http://code.google.com/p/devops-toolchain/">googlecode</ulink>.  
+      Since the format of the work is docbook, individual contributions can be attributed in 
       the syntax of the docbook encoding.  For instance, this introduction chapter 
       was written by Lee Thompson and the docbook XML file has the following annotation
       encoded into it.
@@ -119,10 +129,11 @@
     <para>
       Since Lee assigned the copyright over to the editors of the book, no 
       copyright notice was put into the annotation.  The default behavior of
-      contributions to this document are to assign copyright over to DTO Solutions.
-      Contributions will be accepted without copyright assignment.  For example,
-      Suppose Lee had issue with the copyright and Lee's content was accepted,
-      the annotation would look something like this.
+      contributions to this document are to assign copyright over to DTO Solutions
+      and to attribute contributions or authorship.  Contributions will be 
+      accepted without copyright assignment.  For example, Suppose Lee had issue 
+      with the copyright and Lee's content was accepted, the annotation would 
+      look something like this.
     </para>
     <programlisting>
 <![CDATA[
@@ -179,5 +190,14 @@
     </blockquote>
 ]]>
     </programlisting>
+    <para>
+      The main theme is "someone needs to own this" and drive the work and
+      DTO Solutions is in that role hosting the devops-toolchain project.
+      The creative commons share alike license allows for the work to be
+      re-edited for other purposes and hosted elsewhere as long the modifications
+      are also shared back so that should keep contributor's options open if
+      a directional dispute occurs.  Open source is pretty clever in 
+      that regard!
+    </para>
   </sect1>
  </chapter>
