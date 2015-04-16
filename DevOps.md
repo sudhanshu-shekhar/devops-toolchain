@@ -1,0 +1,5 @@
+# What is DevOps? #
+
+The term "DevOps" is fairly new and therefore does not yet have a canonical definition. Some believe it is a label applied to a set of best practices used for years in high performing IT organizations. Others believe it is a methodology and associated tooling to automate end-to-end software development life cycle. Agile-operations or agile-infrastructure are also close ideas. Skeptics consider the word just a catch phrase. As an approach it certainly has the goal to mitigate the classic disconnect between the development and operations teams through better alignment.
+
+Actually, the term is still so new it is interesting to search for the term on the web to see what is rising to the top: [Google Search](http://www.google.com/search?client=safari&rls=en&q=what+is+devops&ie=UTF-8&oe=UTF-8)

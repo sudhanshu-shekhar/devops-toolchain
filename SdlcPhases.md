@@ -1,0 +1,9 @@
+# Phases #
+## Planning ##
+## Requirements ##
+## Development ##
+## Build ##
+## Testing ##
+## Release ##
+## Operation ##
+## Maintenance ##
